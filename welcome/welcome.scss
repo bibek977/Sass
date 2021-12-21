@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    // Total font size decreased from 100% to 60%
+    font-size: 60%;
+}
+
+// We can use variable
+$bg-color : rgb(140, 204, 140);
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    // Using variables
+    background-color: $bg-color;
+}
+h1{
+    color:red;
+
+    //we can use operators 
+    font-size: 5rem + 2rem;
+}

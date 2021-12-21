@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header ul li {
+  margin: 20px;
+  color: #484be6;
+  font-size: 20px;
+}
+
+.header ul li:nth-child(1) {
+  font-size: 30px;
+  color: green;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.header ul li:nth-child(1):hover {
+  color: tomato;
+}
+
+.header ul li:nth-child(1)::after {
+  content: "";
+  width: 2px;
+  height: 70px;
+  background: blueviolet;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  left: 35px;
+}
+
+.header ul img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.header ul img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=nested.css.map */

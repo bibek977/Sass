@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$item-bg:aqua;
+
+@mixin center($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin size($para-1, $para-2) {
+    height: $para-1;
+    width: $para-2;
+}
+
+.container{
+
+    // mixin property
+    @include center(row);
+    @include size(100vh, 100%);
+    
+    
+    .item{
+        @include center(row);
+        @include size(100px, 100px);
+        background-color: $item-bg;
+        margin: 20px;
+        
+        .items{
+            @include size(10px, 10px);    
+            background-color: maroon;
+            margin: 10px;
+        }
+    }
+}

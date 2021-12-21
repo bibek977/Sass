@@ -1,0 +1,29 @@
+@import "partial1";
+@import "partial2";
+@import "partial3";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    @include center;
+    height: 100vh;
+    width: 100%;
+    background-color: $bg-color;
+
+    .box{
+        @include center;
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        border-radius: 50%;
+
+        .small-box{
+            @include size;
+            background-color: yellow;
+        }
+    }
+}
