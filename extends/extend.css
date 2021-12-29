@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+}
+
+body #id-1, body #id-2, body #id-3, body #id-4 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  background-color: green;
+}
+
+body #id-2, body #id-3 {
+  background-color: red;
+}
+
+body #id-3 {
+  background-color: blue;
+}
+
+body #id-4 {
+  background-color: yellow;
+}
+/*# sourceMappingURL=extend.css.map */
