@@ -1,0 +1,21 @@
+body{
+    padding: 10px == 10px;   //It gives padding: true;
+
+    margin: (10 20px 30em) == (10 20px 30em);  //It gives true;
+
+    border: 2rem != 2rem;  // It gives false;
+
+    border-bottom: 2em == '2em'; //It gives false;
+    
+    font-size: 'arial' == arial;  // It gives true;
+
+    h1{
+        padding-left: 10px < 2px ; //It gives false;
+
+        padding-right: 2000ms = 20s ; //It gives true;
+
+        
+    }
+
+    
+}

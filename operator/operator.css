@@ -1,0 +1,13 @@
+body {
+  padding: true;
+  margin: true;
+  border: false;
+  border-bottom: false;
+  font-size: true;
+}
+
+body h1 {
+  padding-left: false;
+  padding-right: true;
+}
+/*# sourceMappingURL=operator.css.map */

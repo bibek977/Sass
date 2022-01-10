@@ -1,0 +1,12 @@
+$width : 100;
+
+@function half($half-width){
+    @return $half-width/2 + vw;
+}
+
+body{
+    .navbar{
+        width: half($width);
+        
+    }
+}

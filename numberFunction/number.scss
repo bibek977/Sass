@@ -1,0 +1,30 @@
+body{
+    .menu{
+        font-size: abs((20 - 22) / 7) + px;
+        padding: ceil(22 / 7) + px;
+        margin-top: floor(22 / 7) + px;
+        margin-left: round(3.5) + px;
+
+        ul{
+            li{
+                font-size: max(5rem, 2rem, 7rem, 4rem);
+                font-weight: max(500, 200, 700, 400);
+                margin-top: percentage(.2);
+                margin-right: percentage(5px / 70px);
+
+                a{
+                    padding-top: comparable(4px, 7px );  //It is comparable so  gives true;
+                    padding-top: comparable(4cm, 7mm );  //It is comparable so  gives true;
+
+                    margin-left: random();
+                    margin-bottom: random(25);
+                }
+            }
+
+            img{
+                margin: unit(40rem);
+                padding: unitless(12);
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@mixin center($layout){
+    display: $layout;
+    justify-content: center;
+    align-items: center;
+}
+
+$unit : rem;
+
+@mixin padding($direction, $value){
+    padding-#{$direction}: $value + $unit;
+}
+
+@mixin picture($name){
+    .outer-#{$name}{
+        background-image: url("img/#{$name}.jpeg")
+    }
+}
+
+body{
+    h1{
+        @include center(flex);
+        @include padding(left, 10)
+    }
+    @include picture(lion)
+}

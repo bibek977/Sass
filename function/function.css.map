@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AACI,IADA,CACA,OAAO,CAAA;EACH,KAAK,EALD,IAAkB;CAOzB",
+    "sources": [
+        "function.scss"
+    ],
+    "names": [],
+    "file": "function.css"
+}
