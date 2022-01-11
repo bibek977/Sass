@@ -1,0 +1,32 @@
+$list-1 : 10px 20px 10px 20px;
+$list-2 : 5px, 15px, 15px;
+
+body{
+    margin-top: length($list-1);
+    margin-right: nth($list-2, 3);
+    margin-left: length((width:10px, height:30px));
+    padding: set-nth($list-1,-1,40px);
+    padding: join($list-2,5px);
+    padding: join($list-2,$list-1);
+    padding: join($list-1,$list-2);
+    padding: join($list-1,$list-2,comma);
+    padding: join($list-1,$list-2,space);
+
+    margin: append($list-1, 3px 5px);
+    margin: append($list-1, 3px 5px, comma);
+    padding: join($list-1, 3px 5px, comma);
+
+    footer{
+        padding: zip($list-1, $list-2);
+        border: zip((4px solid red),(7px solid green));
+        border: zip((4px), (solid), (red));
+
+        p{
+            padding: index($list-1,20px);
+            margin: list-separator($list-1);
+            margin: list-separator($list-2);
+
+            // padding: is-bracketed();
+        }
+    }
+}

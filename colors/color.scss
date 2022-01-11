@@ -1,0 +1,45 @@
+$div-color : green;
+
+body{
+    div{
+        width: 600px;
+        height: 150px;
+        border: 2px solid black;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .class1{
+        background-color: $div-color;
+
+        &:hover{
+            background-color: adjust-hue($div-color,15);
+        }
+    }
+    .class2{
+        background-color: darken($div-color,5);
+
+        &:hover{
+            background-color: saturate($div-color, 10);
+        }
+    }
+    .class3{
+        background-color: lighten($div-color,5);
+
+        &:hover{
+            background-color: desaturate($div-color,15);
+        }
+    }
+    .class4{
+        background-color: mix($div-color,blue,60);
+
+        &:hover{
+            background-color: transparentize($div-color,0.27);
+
+            // background-color: green($div-color,); It gives how much green used in $div-color i.e 128;
+            // background-color: rgb($div-color);
+            // background-color: alpha($div-color);
+            // background-color: saturation($div-color);
+        }
+    }
+}

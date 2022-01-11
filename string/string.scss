@@ -1,0 +1,15 @@
+body{
+    font-family: quote(Arial);
+    box-sizing: unquote('border-box');
+    display: to-lower-case(Grid);
+    justify-content: to-upper-case(center);
+
+    .container{
+        font-family: str-length('Sans Serif');
+        font-family: str-index('Sans Serif',"i");
+        font-family: str-insert('Sans Serif'," ubuntu",5);
+        font-family: str-slice('Sans Serif',5);
+        font-family: str-slice('Sans Serif',5,9);
+        background-color: unique-id();
+    }
+}

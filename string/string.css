@@ -1,0 +1,20 @@
+body {
+  font-family: "Arial";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: CENTER;
+      -ms-flex-pack: CENTER;
+          justify-content: CENTER;
+}
+
+body .container {
+  font-family: 10;
+  font-family: 9;
+  font-family: "Sans ubuntu Serif";
+  font-family: " Serif";
+  font-family: " Seri";
+  background-color: u33583471;
+}
+/*# sourceMappingURL=string.css.map */
